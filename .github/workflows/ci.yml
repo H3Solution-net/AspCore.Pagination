@@ -19,7 +19,7 @@ jobs:
       run: dotnet restore
     - name: Build
       run: dotnet publish --configuration Release --output ./publish
-    - name: Bump version and push tags
+    - name: Bump version and push tag
       id: bump_release
       uses: anothrNick/github-tag-action@master
       env:
