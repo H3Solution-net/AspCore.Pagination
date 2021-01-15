@@ -27,6 +27,7 @@ jobs:
         TAG_CONTEXT: branch
         WITH_V: true
         DRY_RUN: false
+        INITIAL_VERSION: v0.1.0-release.0
     - name: Zip Folder
       run: zip -r h3-ess-classic-artifact.zip ./publish -x ".git/*" ".github/*" 
     - name: Create Release
